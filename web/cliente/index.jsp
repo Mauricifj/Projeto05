@@ -35,7 +35,7 @@
                             <td><%= customer.getId() %></td>
                             <td><%= customer.getNome() %></td>
                             <td><%= customer.getEmail() %></td>
-                            <td><a href="details.jsp?id=<%= customer.getId() %>">Detalhes</a></td>
+                            <td><a href="detalhes.jsp?id=<%= customer.getId() %>">Detalhes</a></td>
                         </tr>
                 <%      
                     }
