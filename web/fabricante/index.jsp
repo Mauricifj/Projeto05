@@ -11,12 +11,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Clientes - JavaDB</title>
+        <title>Fabricantes - JavaDB</title>
     </head>
     <body>
         <h1>JavaDB</h1>
-        <h2>Clientes</h2>
-        
+        <h2>Fabricantes</h2>
+        <h3><a href="../index.jsp">Voltar</a></h3>
         <%
             try {
                 ArrayList<Manufacturer> manufacturers = Manufacturer.getManufacturers();

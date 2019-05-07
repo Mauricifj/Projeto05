@@ -16,7 +16,7 @@
     <body>
         <h1>JavaDB</h1>
         <h2>Clientes</h2>
-        
+        <h3><a href="../index.jsp">Voltar</a></h3>
         <%
             try {
                 ArrayList<Customer> customers = Customer.getCustomers();
