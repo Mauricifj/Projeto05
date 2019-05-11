@@ -20,14 +20,16 @@
     <body>   
         <%@include file="../WEB-INF/jspf/header.jspf" %>
         
-        <h2>Clientes</h2>
-        <h3><a href="../index.jsp">Voltar</a></h3>
+        <h2 class="titleClienteFabricante">Clientes</h2>
+       
         <%
             try {
                 ArrayList<Customer> customers = Customer.getCustomers();
         %>
-            <table border="1">
-                <tr>
+        
+        <div class="container tableClienteFabricanteGeral">
+            <table class="table table-hover tableClienteFabricante" border="1">
+                <tr class="thClienteFabricante">
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Email</th>
@@ -36,16 +38,19 @@
                 <%
                     for (Customer customer : customers) {
                 %>
-                        <tr>
-                            <td><%= customer.getId() %></td>
+                        <tr class="generatedRow">
+                            <td style="text-align: center;"><%= customer.getId() %></td>
                             <td><%= customer.getNome() %></td>
                             <td><%= customer.getEmail() %></td>
-                            <td><a href="detalhes.jsp?id=<%= customer.getId() %>">Detalhes</a></td>
+                            <td style="text-align: center;"><a href="detalhes.jsp?id=<%= customer.getId() %>">Detalhes</a></td>
                         </tr>
                 <%      
                     }
                 %>
             </table>
+        </div>
+            
+            <h3><a href="../index.jsp" class="backButton btn btn-danger btn-lg">Voltar</a></h3>
         <%        
             } catch(Exception ex) {
         %>

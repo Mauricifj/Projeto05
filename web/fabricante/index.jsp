@@ -19,34 +19,39 @@
     <body>
         <%@include file="../WEB-INF/jspf/header.jspf" %>
 
-        <h2>Fabricantes</h2>
-        <h3><a href="../index.jsp">Voltar</a></h3>
+        <h2 class="titleClienteFabricante">Fabricantes</h2>
+        
         <%
             try {
                 ArrayList<Manufacturer> manufacturers = Manufacturer.getManufacturers();
         %>
-            <table border="1">
-                <tr>
-                    <th>Id</th>
-                    <th>Nome</th>
-                    <th>Cidade/Estado</th>
-                    <th>Email</th>
-                    <th>Produtos</th>
-                </tr>
-                <%
-                    for (Manufacturer manufacturer : manufacturers) {
-                %>
-                        <tr>
-                            <td><%= manufacturer.getId() %></td>
-                            <td><%= manufacturer.getNome() %></td>
-                            <td><%= manufacturer.getNome() %></td>
-                            <td><%= manufacturer.getEmail() %></td>
-                            <td><a href="produtos.jsp?id=<%= manufacturer.getId() %>">Produtos</a></td>
-                        </tr>
-                <%      
+            <div class="container tableClienteFabricanteGeral">
+                <table class="table table-hover tableClienteFabricante" border="1">
+                    <tr class="thClienteFabricante">
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Cidade/Estado</th>
+                        <th>Email</th>
+                        <th>Produtos</th>
+                    </tr>
+                    
+                    <%
+                        for (Manufacturer manufacturer : manufacturers) {
+                    %>
+                            <tr class="generatedRow">
+                                <td style="text-align: center;"><%= manufacturer.getId() %></td>
+                                <td><%= manufacturer.getNome() %></td>
+                                <td style="text-align: center;"><%= manufacturer.getCidade() %>  -  <%= manufacturer.getEstado() %></td>
+                                <td><%= manufacturer.getEmail() %></td>
+                                <td style="text-align: center;"><a href="produtos.jsp?id=<%= manufacturer.getId() %>">Produtos</a></td>
+                            </tr>
+                    <%      
                     }
                 %>
             </table>
+            </div>
+            
+            <h3><a href="../index.jsp" class="backButton btn btn-danger btn-lg">Voltar</a></h3>
         <%        
             } catch(Exception ex) {
         %>
