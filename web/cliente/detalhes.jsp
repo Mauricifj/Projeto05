@@ -55,7 +55,7 @@
                     }
                     } catch(Exception ex) {
         %>
-                    <h3><%= ex.getMessage() %></h3>
+                    <h3>Erro ao buscar pedidos do cliente</h3>
         <%
                 }
             }

@@ -65,12 +65,12 @@
         <%        
                     } else {
         %>
-                    <h3>Cliente <%= id %> não encontrado</h3>
+                    <h3>Fabricante <%= id %> não encontrado</h3>
         <%
                     }
                 } catch(Exception ex) {
         %>
-                    <h3><%= ex.getMessage() %></h3>
+                    <h3>Erro ao buscar produtos do fabricante></h3>
         <%
                 }
             }
