@@ -1,0 +1,6 @@
+
+<%@ page pageEncoding="UTF-8" %>
+
+<footer class="fixed-bottom">
+    <span>Christian | Maurici | Vitor (2019)<br>Todos os direitos reservados ®</span>
+</footer>
