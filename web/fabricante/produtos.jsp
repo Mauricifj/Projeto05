@@ -15,7 +15,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Compras</title>
+        <title>Produtos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../style.css">
@@ -23,7 +23,7 @@
     <body class="list">
         <%@include file="../WEB-INF/jspf/header.jspf" %>
 
-       <h2 class="titleClienteFabricante">Compras</h2>
+       <h2 class="titleClienteFabricante">Produtos</h2>
     
         <%
             if (request.getParameter("id") != null)

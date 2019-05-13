@@ -43,6 +43,7 @@
                                     <th>Data</th>
                                     <th>Frete</th>
                                 </tr>
+                            <%if(orders.size() > 0) {%>
                                 <%
                                     for (Order order : orders) {
                                 %>
@@ -58,7 +59,9 @@
                         </div>
                         
                         <h3><a href="index.jsp" class="backButton btn btn-danger btn-lg">Voltar</a></h3>
-        <%        
+        <%          } else { %>
+                      <h3 class="col-6 centralize text-center"> Não há compras </h3>     
+                    <%}
                     } else {
         %>
                     <h3>Cliente <%= id %> não encontrado</h3>
