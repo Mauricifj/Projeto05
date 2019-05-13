@@ -1,6 +1,10 @@
 
 <%@ page pageEncoding="UTF-8" %>
 
-<footer class="active">
-    <span>Christian | Maurici | Vitor (2019)<br>Todos os direitos reservados ®</span>
+<footer>
+    <!--<span>-->
+        Christian | Maurici | Vitor (2019)
+        <a class="footer-link" href="https://github.com/mauricifj/projeto05">Github do repositório</a>
+        <br>Todos os direitos reservados ®
+    <!--</span>-->
 </footer>

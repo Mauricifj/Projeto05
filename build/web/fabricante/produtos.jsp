@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../style.css">
     </head>
-    <body>
+    <body class="list">
         <%@include file="../WEB-INF/jspf/header.jspf" %>
 
        <h2 class="titleClienteFabricante">Compras</h2>
@@ -39,7 +39,7 @@
                             <h4 style="font-weight: bold;">Número: <%= manufacturer.getId() %></h4>
                             <h4 style="font-weight: bold;">Nome: <%= manufacturer.getNome() %></h4>
                         </div> 
-        
+                        <%if(produtos.size() > 0) {%>
                         <div class="container tableClienteFabricanteGeral col-md-12" style="margin-left: 9%;">
                            <table class="table table-hover tableClienteFabricante" border="1">
                                 <tr class="thClienteFabricante">                                  
@@ -74,7 +74,9 @@
                         </div>
                         
                             <h3><a href="index.jsp" class="backButton btn btn-danger btn-lg" style="margin-left: 10%;">Voltar</a></h3>
-        <%        
+        <%          } else { %>
+        <h3 class="col-6 centralize text-center"> Não há produtos </h3>
+        <%          }
                     } else {
         %>
                     <h3>Cliente <%= id %> não encontrado</h3>

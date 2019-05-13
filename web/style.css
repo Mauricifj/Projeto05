@@ -61,6 +61,7 @@ footer:hover { color:  #4d94ff !important; cursor: pointer; }
 
 .generatedRow { cursor: pointer; }
 
+.centralize { margin: auto; margin-top: 40vh }
 
 /* DETALHES */
 .details { margin: 7% 0 -4% 17%; color: #ff6600; } 
@@ -70,5 +71,14 @@ footer:hover { color:  #4d94ff !important; cursor: pointer; }
 
 .colaborator { color: coral }
 .colaborator:hover { color: #ff6600 }
+
+.footer-link { color: coral }
+.footer-link:hover { color: #ff6600 }
+
+
+.list { min-height: 100vh }
+
+footer { margin-top: 100vh; color: coral }
+footer:hover { color: coral !important; }
 
 a:hover { text-decoration: none }

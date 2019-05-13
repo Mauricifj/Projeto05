@@ -1,4 +1,4 @@
-<%-- 
+<%-- q 
     Document   : index
     Created on : 06/05/2019, 23:41:30
     Author     : mfj
@@ -21,17 +21,17 @@
             <h1 class="bemvindo">Seja Bem Vindo!</h1>
 
             <div class="perfil-christian">
-                <h4>CHRISTIAN</h4>
+                <h4><a class="colaborator" href="https://github.com/christianmsbrito">CHRISTIAN</a></h4>
                 <img src="img/Vitor.jpg" class="img-fluid perfil-img">
             </div>
             
              <div class="perfil-maurici">
-                <h4>MAURICI</h4>
+                 <h4><a class="colaborator" href="https://github.com/mauricifj">MAURICI</a></h4>
                 <img src="img/Vitor.jpg" class="img-fluid perfil-img">
             </div>
             
              <div class="perfil-vitor">
-                <h4>VITOR</h4>
+                 <h4><a class="colaborator" href="https://github.com/vitorbafoni">VITOR</a></h4>
                 <img src="img/Vitor.jpg" class="img-fluid perfil-img">
             </div>
            
